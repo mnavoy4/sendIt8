@@ -3,6 +3,8 @@ import { View, Text, StyleSheet, Dimensions } from 'react-native';
 import { useDispatch, useSelector } from 'react-redux';
 import MapView, { PROVIDER_GOOGLE } from 'react-native-maps';
 import { getCurrentLocation } from '../actions/mapActions.js';
+import MapSearchBox from '../components/MapSearchBox';
+
 
 export default function Map() {
 
@@ -27,6 +29,7 @@ export default function Map() {
       >
         <MapView.Marker coordinate={region} pinColor='green' />
       </MapView>
+      <MapSearchBox />
     </View>
   )
 }
