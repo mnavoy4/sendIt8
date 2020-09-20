@@ -1,5 +1,6 @@
 #import "AppDelegate.h"
 #import GoogleMaps
+#import GooglePlaces
 
 #import <React/RCTBridge.h>
 #import <React/RCTBundleURLProvider.h>
@@ -41,7 +42,8 @@ static void InitializeFlipper(UIApplication *application) {
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-  [GMSServices provideAPIKey:@"AIzaSyDh1wBh_MfGicXAktoB3he5DihB7dEI6Zw"];
+  [GMSPlacesClient provideAPIKey:@"AIzaSyCUapq6jDSDYvPZGlFmubHd6UeEs_EPh3Y"];
+  [GMSServices provideAPIKey:@"AIzaSyCUapq6jDSDYvPZGlFmubHd6UeEs_EPh3Y"];
 #if DEBUG
   InitializeFlipper(application);
 #endif

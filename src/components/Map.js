@@ -4,6 +4,8 @@ import { useDispatch, useSelector } from 'react-redux';
 import MapView, { PROVIDER_GOOGLE } from 'react-native-maps';
 import { getCurrentLocation } from '../actions/mapActions.js';
 import MapSearchBox from '../components/MapSearchBox';
+import MapSearchResults from '../components/MapSearchResults';
+import store from '../store/store'
 
 
 export default function Map() {
@@ -20,6 +22,8 @@ export default function Map() {
     getCurrentLocation(dispatch, LATITUDE_DELTA, LONGITUDE_DELTA)
   }, []); 
 
+  // console.log('FIND MEEEEEEE', store.getState().toggleSearchResult.resultType)
+
   return (
     <View styles={styles.container}>
       <MapView
@@ -30,6 +34,7 @@ export default function Map() {
         <MapView.Marker coordinate={region} pinColor='green' />
       </MapView>
       <MapSearchBox />
+      { (store.getState().toggleSearchResult.resultType.pickUp || store.getState().toggleSearchResult.resultType.dropOff) ? <MapSearchResults /> : null }
     </View>
   )
 }

@@ -4,7 +4,7 @@ const width = Dimensions.get('window').width;
 
 const mapSearchBoxStyles = {
   searchBox: {
-    top: 50,
+    top: 0,
     position: "absolute",
     width: width
   },
