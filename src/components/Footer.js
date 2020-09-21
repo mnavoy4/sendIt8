@@ -7,7 +7,7 @@ export default function FooterComponent() {
   return (
         <Footer style={footerStyles.footerContainer}>
           <FooterTab>
-            <Button>
+            <Button active>
               <Text style={footerStyles.text}>Find Ride</Text>
               <FontAwesome size={16} name='car' style={footerStyles.icon}/>
             </Button>
@@ -15,10 +15,10 @@ export default function FooterComponent() {
               <Text>Post Ride</Text>
             </Button>
             <Button>
-              <Text>My Rides</Text>
+              <Text>My Profile</Text>
             </Button>
             <Button>
-              <Text>Profile</Text>
+              <Text>Log Out</Text>
             </Button>
           </FooterTab>
         </Footer>

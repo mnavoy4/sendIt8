@@ -7,21 +7,14 @@ import headerStyles from '../styles/HeaderStyles';
 
 export default function HeaderComponent() {
   return (
-    <Header style={headerStyles.container}>
+    <Header style={headerStyles.container} iosBarStyle='light-content'>
       <Left>
-          <Button transparent>
-            <FontAwesome name='bars' style={headerStyles.icon} />
-            <Text>Some Text</Text>
-          </Button>
-        </Left>
-        <Body>
-          <Text>Some Text</Text>
-        </Body>
-        <Right>
-          <Button transparent>
-            <FontAwesome name='gift' style={headerStyles.icon} />
-          </Button>
-        </Right>
-      </Header> 
+      </Left>
+      <Body>
+        <Text style={headerStyles.headerText}>SendIt!</Text>
+      </Body>
+      <Right>
+      </Right>
+    </Header> 
   )
 }

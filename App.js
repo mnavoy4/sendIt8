@@ -7,15 +7,17 @@ import store from './src/store/store';
 import Map from './src/components/Map';
 import HeaderComponent from './src/components/HeaderComponent';
 import FooterComponent from './src/components/Footer'
+import CreateRide from './src/components/CreateRide';
 
 export default function App() {
   return (
     <Provider store={store} >
       <View style={styles.container}>
         <HeaderComponent />
-        <Map />
+        <CreateRide />
+        {/* <Map /> */}
         {/* <Main /> */}
-        <StatusBar style="auto" />
+        {/* <StatusBar style="auto" /> */}
       </View>
       <FooterComponent />
     </Provider>

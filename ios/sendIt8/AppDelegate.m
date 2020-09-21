@@ -62,6 +62,9 @@ static void InitializeFlipper(UIApplication *application) {
   [super application:application didFinishLaunchingWithOptions:launchOptions];
 
   return YES;
+  // NSURL *jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index" fallbackResource:nil];
+  //   [ReactNativeNavigation bootstrap:jsCodeLocation launchOptions:launchOptions];
+  //   return YES;
 }
 
 - (RCTBridge *)initializeReactNativeApp
