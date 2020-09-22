@@ -1,7 +1,5 @@
 import { StyleSheet, Dimensions } from "react-native";
-// import {
-// 	OpenSans_400Regular
-// } from '@expo-google-fonts'
+
 const width = Dimensions.get('window').width;
 const headerStyles = StyleSheet.create({
   container: {
